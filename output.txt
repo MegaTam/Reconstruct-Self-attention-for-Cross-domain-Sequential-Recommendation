@@ -1,0 +1,502 @@
+(pytorch) PS D:\HKUST\MSBD5002\project\autocdsr_self> & C:\Users\15940\anaconda3\envs\pytorch\python.exe d:/HKUST/MSBD5002/project/autocdsr_self/train_autocdsr_full.py
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776241776.379483   37172 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776241778.129848   37172 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Using device: cuda
+Loaded mapper:
+num_items : 944387
+num_events: 9
+item_pad  : 0
+item_mask : 1
+item_unk  : 2
+pref_K    : 10
+target_pref_index: 1
+I0000 00:00:1776241780.576787   37172 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1776241780.615838   29808 tf_record_dataset_op.cc:390] TFRecordDataset `buffer_size` is unspecified, default to 262144
+
+========== Epoch 1/3 ==========
+[Train] step=0010 total_loss=11.8815 rec_loss=13.7631 cd_loss=0.001884 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8904
+[Train] step=0020 total_loss=11.8692 rec_loss=13.7488 cd_loss=0.001545 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8793
+[Train] step=0030 total_loss=11.8509 rec_loss=13.7277 cd_loss=0.001403 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8693
+[Train] step=0040 total_loss=11.8351 rec_loss=13.7094 cd_loss=0.001293 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8631
+[Train] step=0050 total_loss=11.7564 rec_loss=13.6182 cd_loss=0.001574 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8523
+[Train] step=0060 total_loss=11.7778 rec_loss=13.6430 cd_loss=0.001452 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8447
+[Train] step=0070 total_loss=11.7234 rec_loss=13.5800 cd_loss=0.001768 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8372
+[Train] step=0080 total_loss=11.7559 rec_loss=13.6177 cd_loss=0.001219 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8282
+[Train] step=0090 total_loss=11.8081 rec_loss=13.6781 cd_loss=0.001395 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8249
+[Train] step=0100 total_loss=11.8397 rec_loss=13.7146 cd_loss=0.001636 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8200
+[Train] step=0110 total_loss=11.6974 rec_loss=13.5499 cd_loss=0.001490 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8132
+[Train] step=0120 total_loss=11.7964 rec_loss=13.6645 cd_loss=0.001394 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8066
+[Train] step=0130 total_loss=11.6266 rec_loss=13.4678 cd_loss=0.001455 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.8019
+[Train] step=0140 total_loss=11.7164 rec_loss=13.5718 cd_loss=0.001671 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7979
+[Train] step=0150 total_loss=11.6875 rec_loss=13.5382 cd_loss=0.002299 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7939
+[Train] step=0160 total_loss=11.7646 rec_loss=13.6277 cd_loss=0.001445 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7930
+[Train] step=0170 total_loss=11.6579 rec_loss=13.5041 cd_loss=0.001591 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7891
+[Train] step=0180 total_loss=11.7069 rec_loss=13.5609 cd_loss=0.001318 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7874
+[Train] step=0190 total_loss=11.6241 rec_loss=13.4649 cd_loss=0.001517 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7862
+[Train] step=0200 total_loss=11.7751 rec_loss=13.6398 cd_loss=0.001426 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7829
+[Train] step=0210 total_loss=11.5722 rec_loss=13.4049 cd_loss=0.001527 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7783
+[Train] step=0220 total_loss=11.6137 rec_loss=13.4530 cd_loss=0.001446 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7753
+[Train] step=0230 total_loss=11.6868 rec_loss=13.5375 cd_loss=0.001517 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7734
+[Train] step=0240 total_loss=11.6482 rec_loss=13.4927 cd_loss=0.002279 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7720
+[Train] step=0250 total_loss=11.7346 rec_loss=13.5930 cd_loss=0.001342 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7687
+[Train] step=0260 total_loss=11.6387 rec_loss=13.4819 cd_loss=0.001426 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7663
+[Train] step=0270 total_loss=11.6184 rec_loss=13.4583 cd_loss=0.001666 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7629
+[Train] step=0280 total_loss=11.8416 rec_loss=13.7169 cd_loss=0.001715 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7628
+[Train] step=0290 total_loss=11.7633 rec_loss=13.6262 cd_loss=0.001802 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7636
+[Train] step=0300 total_loss=11.7910 rec_loss=13.6583 cd_loss=0.001380 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7609
+[Train] step=0310 total_loss=11.7104 rec_loss=13.5649 cd_loss=0.001537 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7571
+[Train] step=0320 total_loss=11.6264 rec_loss=13.4675 cd_loss=0.002196 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7549
+[Train] step=0330 total_loss=11.4783 rec_loss=13.2958 cd_loss=0.003048 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7531
+[Train] step=0340 total_loss=11.5382 rec_loss=13.3654 cd_loss=0.001413 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7526
+[Train] step=0350 total_loss=11.5981 rec_loss=13.4348 cd_loss=0.001674 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7496
+[Train] step=0360 total_loss=11.7541 rec_loss=13.6155 cd_loss=0.001871 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7469
+[Train] step=0370 total_loss=11.6709 rec_loss=13.5191 cd_loss=0.001821 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7434
+[Train] step=0380 total_loss=11.4767 rec_loss=13.2941 cd_loss=0.001951 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7395
+[Train] step=0390 total_loss=11.6235 rec_loss=13.4642 cd_loss=0.001725 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7372
+[Train] step=0400 total_loss=11.4612 rec_loss=13.2762 cd_loss=0.001857 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7347
+[Train] step=0410 total_loss=11.7432 rec_loss=13.6029 cd_loss=0.001532 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7310
+[Train] step=0420 total_loss=11.6367 rec_loss=13.4795 cd_loss=0.001606 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7287
+[Train] step=0430 total_loss=11.7275 rec_loss=13.5847 cd_loss=0.001415 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7263
+[Train] step=0440 total_loss=11.7936 rec_loss=13.6613 cd_loss=0.001527 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7251
+[Train] step=0450 total_loss=11.8266 rec_loss=13.6995 cd_loss=0.001461 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7225
+[Train] step=0460 total_loss=11.3246 rec_loss=13.1180 cd_loss=0.001634 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7187
+[Train] step=0470 total_loss=11.1963 rec_loss=12.9694 cd_loss=0.001491 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7159
+[Train] step=0480 total_loss=11.2701 rec_loss=13.0549 cd_loss=0.001343 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7125
+[Train] step=0490 total_loss=11.7420 rec_loss=13.6015 cd_loss=0.001841 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7094
+[Train] step=0500 total_loss=11.5629 rec_loss=13.3940 cd_loss=0.001844 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7072
+[Train] step=0510 total_loss=11.5406 rec_loss=13.3681 cd_loss=0.001904 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7042
+[Train] step=0520 total_loss=11.8125 rec_loss=13.6831 cd_loss=0.001742 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7022
+[Train] step=0530 total_loss=11.6464 rec_loss=13.4907 cd_loss=0.001513 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.7008
+[Train] step=0540 total_loss=11.5521 rec_loss=13.3814 cd_loss=0.001776 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6986
+[Train] step=0550 total_loss=11.6230 rec_loss=13.4635 cd_loss=0.001980 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6983
+[Train] step=0560 total_loss=11.6347 rec_loss=13.4772 cd_loss=0.001846 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6965
+[Train] step=0570 total_loss=11.5955 rec_loss=13.4317 cd_loss=0.001916 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6949
+[Train] step=0580 total_loss=11.6463 rec_loss=13.4906 cd_loss=0.001490 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6930
+[Train] step=0590 total_loss=11.4037 rec_loss=13.2096 cd_loss=0.001885 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6917
+[Train] step=0600 total_loss=11.5549 rec_loss=13.3848 cd_loss=0.001677 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6886
+[Train] step=0610 total_loss=11.3958 rec_loss=13.2004 cd_loss=0.001815 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6849
+[Train] step=0620 total_loss=11.0920 rec_loss=12.8486 cd_loss=0.001392 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6817
+[Train] step=0630 total_loss=11.3859 rec_loss=13.1889 cd_loss=0.002182 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6791
+[Train] step=0640 total_loss=11.7468 rec_loss=13.6070 cd_loss=0.001636 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6764
+[Train] step=0650 total_loss=11.6097 rec_loss=13.4483 cd_loss=0.001293 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6734
+[Train] step=0660 total_loss=11.4557 rec_loss=13.2699 cd_loss=0.001356 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6712
+[Train] step=0670 total_loss=11.2678 rec_loss=13.0522 cd_loss=0.001455 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6688
+[Train] step=0680 total_loss=11.3325 rec_loss=13.1272 cd_loss=0.001595 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6658
+[Train] step=0690 total_loss=11.5828 rec_loss=13.4170 cd_loss=0.001668 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6630
+[Train] step=0700 total_loss=11.5727 rec_loss=13.4053 cd_loss=0.001792 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6610
+[Train] step=0710 total_loss=11.6350 rec_loss=13.4776 cd_loss=0.001788 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6597
+[Train] step=0720 total_loss=11.2696 rec_loss=13.0542 cd_loss=0.001652 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6568
+[Train] step=0730 total_loss=11.7479 rec_loss=13.6083 cd_loss=0.001449 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6550
+[Train] step=0740 total_loss=11.4661 rec_loss=13.2820 cd_loss=0.001313 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6545
+[Train] step=0750 total_loss=11.7856 rec_loss=13.6520 cd_loss=0.001696 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6528
+[Train] step=0760 total_loss=11.5219 rec_loss=13.3466 cd_loss=0.001439 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6505
+[Train] step=0770 total_loss=11.6954 rec_loss=13.5476 cd_loss=0.001423 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.6495
+[Epoch 1] train_total=11.6495 train_rec=13.4944 train_cd=0.001607 alpha_rec=0.8633 alpha_cd=0.1367 active=2.00 beta_entropy=0.0000 | eval_rec=13.4153 eval_cd=0.001563
+Saved new best checkpoint to: artifacts\checkpoints\autocdsr_full_best.pt
+
+========== Epoch 2/3 ==========
+[Train] step=0010 total_loss=11.4315 rec_loss=13.2419 cd_loss=0.001111 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2945
+[Train] step=0020 total_loss=11.1288 rec_loss=12.8913 cd_loss=0.001136 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2629
+[Train] step=0030 total_loss=11.5539 rec_loss=13.3837 cd_loss=0.001028 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2968
+[Train] step=0040 total_loss=11.3708 rec_loss=13.1716 cd_loss=0.001444 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2970
+[Train] step=0050 total_loss=11.4483 rec_loss=13.2614 cd_loss=0.001040 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3163
+[Train] step=0060 total_loss=11.4124 rec_loss=13.2198 cd_loss=0.001054 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3083
+[Train] step=0070 total_loss=11.5121 rec_loss=13.3352 cd_loss=0.001036 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3098
+[Train] step=0080 total_loss=11.4339 rec_loss=13.2447 cd_loss=0.001041 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3003
+[Train] step=0090 total_loss=11.2140 rec_loss=12.9899 cd_loss=0.001170 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3017
+[Train] step=0100 total_loss=11.5989 rec_loss=13.4358 cd_loss=0.001067 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3025
+[Train] step=0110 total_loss=11.3633 rec_loss=13.1629 cd_loss=0.001060 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3043
+[Train] step=0120 total_loss=11.2953 rec_loss=13.0841 cd_loss=0.001051 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3066
+[Train] step=0130 total_loss=11.0147 rec_loss=12.7590 cd_loss=0.001638 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3097
+[Train] step=0140 total_loss=11.2762 rec_loss=13.0620 cd_loss=0.001486 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.3043
+[Train] step=0150 total_loss=10.9666 rec_loss=12.7034 cd_loss=0.001321 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2933
+[Train] step=0160 total_loss=11.3925 rec_loss=13.1967 cd_loss=0.001353 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2919
+[Train] step=0170 total_loss=11.3888 rec_loss=13.1924 cd_loss=0.001345 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2880
+[Train] step=0180 total_loss=11.2194 rec_loss=12.9963 cd_loss=0.001129 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2862
+[Train] step=0190 total_loss=11.3424 rec_loss=13.1387 cd_loss=0.001228 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2895
+[Train] step=0200 total_loss=11.1804 rec_loss=12.9510 cd_loss=0.001513 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2894
+[Train] step=0210 total_loss=11.0591 rec_loss=12.8104 cd_loss=0.001650 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2877
+[Train] step=0220 total_loss=11.3750 rec_loss=13.1764 cd_loss=0.001215 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2850
+[Train] step=0230 total_loss=11.0081 rec_loss=12.7514 cd_loss=0.001261 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2815
+[Train] step=0240 total_loss=11.2578 rec_loss=13.0407 cd_loss=0.001209 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2806
+[Train] step=0250 total_loss=10.9391 rec_loss=12.6714 cd_loss=0.001763 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2787
+[Train] step=0260 total_loss=11.2334 rec_loss=13.0123 cd_loss=0.001461 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2769
+[Train] step=0270 total_loss=11.5935 rec_loss=13.4295 cd_loss=0.001353 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2776
+[Train] step=0280 total_loss=11.0019 rec_loss=12.7441 cd_loss=0.001639 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2757
+[Train] step=0290 total_loss=11.1727 rec_loss=12.9421 cd_loss=0.001269 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2692
+[Train] step=0300 total_loss=11.1824 rec_loss=12.9534 cd_loss=0.001126 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2674
+[Train] step=0310 total_loss=11.2098 rec_loss=12.9850 cd_loss=0.001233 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2665
+[Train] step=0320 total_loss=11.3766 rec_loss=13.1783 cd_loss=0.001154 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2604
+[Train] step=0330 total_loss=11.5078 rec_loss=13.3303 cd_loss=0.001372 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2616
+[Train] step=0340 total_loss=10.9089 rec_loss=12.6365 cd_loss=0.001511 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2584
+[Train] step=0350 total_loss=11.4217 rec_loss=13.2305 cd_loss=0.001230 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2573
+[Train] step=0360 total_loss=11.1732 rec_loss=12.9426 cd_loss=0.001404 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2587
+[Train] step=0370 total_loss=10.9533 rec_loss=12.6878 cd_loss=0.001572 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2559
+[Train] step=0380 total_loss=11.2146 rec_loss=12.9906 cd_loss=0.001237 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2545
+[Train] step=0390 total_loss=10.9509 rec_loss=12.6851 cd_loss=0.001593 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2530
+[Train] step=0400 total_loss=11.2577 rec_loss=13.0406 cd_loss=0.001303 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2513
+[Train] step=0410 total_loss=11.2309 rec_loss=13.0094 cd_loss=0.001324 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2508
+[Train] step=0420 total_loss=11.2109 rec_loss=12.9863 cd_loss=0.001653 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2507
+[Train] step=0430 total_loss=11.1372 rec_loss=12.9010 cd_loss=0.001262 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2511
+[Train] step=0440 total_loss=11.3326 rec_loss=13.1272 cd_loss=0.001373 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2508
+[Train] step=0450 total_loss=11.4316 rec_loss=13.2419 cd_loss=0.001603 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2485
+[Train] step=0460 total_loss=11.0275 rec_loss=12.7739 cd_loss=0.001735 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2445
+[Train] step=0470 total_loss=11.2581 rec_loss=13.0409 cd_loss=0.001428 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2456
+[Train] step=0480 total_loss=11.3574 rec_loss=13.1560 cd_loss=0.001332 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2436
+[Train] step=0490 total_loss=11.2339 rec_loss=13.0129 cd_loss=0.001332 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2417
+[Train] step=0500 total_loss=11.3572 rec_loss=13.1558 cd_loss=0.001429 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2419
+[Train] step=0510 total_loss=11.2774 rec_loss=13.0633 cd_loss=0.001333 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2420
+[Train] step=0520 total_loss=11.0480 rec_loss=12.7976 cd_loss=0.001323 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2379
+[Train] step=0530 total_loss=11.1007 rec_loss=12.8586 cd_loss=0.001499 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2369
+[Train] step=0540 total_loss=11.3148 rec_loss=13.1067 cd_loss=0.001264 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2360
+[Train] step=0550 total_loss=11.2422 rec_loss=13.0226 cd_loss=0.001455 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2340
+[Train] step=0560 total_loss=11.4570 rec_loss=13.2714 cd_loss=0.001251 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2334
+[Train] step=0570 total_loss=11.1700 rec_loss=12.9388 cd_loss=0.002226 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2329
+[Train] step=0580 total_loss=11.1429 rec_loss=12.9075 cd_loss=0.001701 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2317
+[Train] step=0590 total_loss=11.4565 rec_loss=13.2708 cd_loss=0.001435 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2299
+[Train] step=0600 total_loss=11.5264 rec_loss=13.3518 cd_loss=0.001398 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2288
+[Train] step=0610 total_loss=10.8520 rec_loss=12.5705 cd_loss=0.001891 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2276
+[Train] step=0620 total_loss=11.4179 rec_loss=13.2261 cd_loss=0.001352 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2273
+[Train] step=0630 total_loss=10.7580 rec_loss=12.4617 cd_loss=0.001170 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2258
+[Train] step=0640 total_loss=10.9947 rec_loss=12.7358 cd_loss=0.001336 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2238
+[Train] step=0650 total_loss=11.3016 rec_loss=13.0913 cd_loss=0.001470 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2234
+[Train] step=0660 total_loss=11.2280 rec_loss=13.0061 cd_loss=0.001177 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2222
+[Train] step=0670 total_loss=10.9652 rec_loss=12.7017 cd_loss=0.001378 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2210
+[Train] step=0680 total_loss=11.1174 rec_loss=12.8780 cd_loss=0.001631 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2217
+[Train] step=0690 total_loss=11.7256 rec_loss=13.5825 cd_loss=0.001316 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2231
+[Train] step=0700 total_loss=11.0050 rec_loss=12.7478 cd_loss=0.001460 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2221
+[Train] step=0710 total_loss=11.4191 rec_loss=13.2276 cd_loss=0.001186 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2221
+[Train] step=0720 total_loss=11.1391 rec_loss=12.9031 cd_loss=0.001546 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2214
+[Train] step=0730 total_loss=11.0153 rec_loss=12.7598 cd_loss=0.001270 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2192
+[Train] step=0740 total_loss=11.5648 rec_loss=13.3963 cd_loss=0.001140 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2185
+[Train] step=0750 total_loss=11.0027 rec_loss=12.7452 cd_loss=0.001346 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2171
+[Train] step=0760 total_loss=11.4327 rec_loss=13.2432 cd_loss=0.001273 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2166
+[Train] step=0770 total_loss=11.4186 rec_loss=13.2269 cd_loss=0.001318 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=11.2175
+[Epoch 2] train_total=11.2175 train_rec=12.9940 train_cd=0.001364 alpha_rec=0.8633 alpha_cd=0.1367 active=2.00 beta_entropy=0.0000 | eval_rec=13.3334 eval_cd=0.001483
+Saved new best checkpoint to: artifacts\checkpoints\autocdsr_full_best.pt
+
+========== Epoch 3/3 ==========
+[Train] step=0010 total_loss=11.0260 rec_loss=12.7722 cd_loss=0.001499 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9550
+[Train] step=0020 total_loss=11.2261 rec_loss=13.0039 cd_loss=0.001154 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9641
+[Train] step=0030 total_loss=11.3230 rec_loss=13.1162 cd_loss=0.001489 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9498
+[Train] step=0040 total_loss=10.9812 rec_loss=12.7202 cd_loss=0.001462 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9171
+[Train] step=0050 total_loss=10.8911 rec_loss=12.6158 cd_loss=0.001526 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9074
+[Train] step=0060 total_loss=10.8981 rec_loss=12.6240 cd_loss=0.001211 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8940
+[Train] step=0070 total_loss=10.8477 rec_loss=12.5656 cd_loss=0.001534 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8781
+[Train] step=0080 total_loss=10.8246 rec_loss=12.5388 cd_loss=0.001625 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8768
+[Train] step=0090 total_loss=11.0278 rec_loss=12.7742 cd_loss=0.001372 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8740
+[Train] step=0100 total_loss=10.7537 rec_loss=12.4567 cd_loss=0.001294 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8705
+[Train] step=0110 total_loss=11.0706 rec_loss=12.8238 cd_loss=0.001246 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8730
+[Train] step=0120 total_loss=11.1665 rec_loss=12.9349 cd_loss=0.001271 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8754
+[Train] step=0130 total_loss=10.7741 rec_loss=12.4803 cd_loss=0.001167 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8812
+[Train] step=0140 total_loss=10.8521 rec_loss=12.5707 cd_loss=0.001151 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8829
+[Train] step=0150 total_loss=10.9173 rec_loss=12.6462 cd_loss=0.001201 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8857
+[Train] step=0160 total_loss=10.9447 rec_loss=12.6779 cd_loss=0.001427 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8805
+[Train] step=0170 total_loss=11.1315 rec_loss=12.8944 cd_loss=0.001000 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8887
+[Train] step=0180 total_loss=11.0161 rec_loss=12.7607 cd_loss=0.001232 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8899
+[Train] step=0190 total_loss=10.7740 rec_loss=12.4803 cd_loss=0.001102 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8864
+[Train] step=0200 total_loss=10.9656 rec_loss=12.7022 cd_loss=0.001305 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8925
+[Train] step=0210 total_loss=10.8365 rec_loss=12.5527 cd_loss=0.001157 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8930
+[Train] step=0220 total_loss=10.6151 rec_loss=12.2962 cd_loss=0.001193 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8878
+[Train] step=0230 total_loss=10.8215 rec_loss=12.5352 cd_loss=0.001287 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8890
+[Train] step=0240 total_loss=10.7388 rec_loss=12.4395 cd_loss=0.001245 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8872
+[Train] step=0250 total_loss=10.9299 rec_loss=12.6609 cd_loss=0.001112 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8871
+[Train] step=0260 total_loss=10.8392 rec_loss=12.5557 cd_loss=0.001286 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8910
+[Train] step=0270 total_loss=10.8809 rec_loss=12.6040 cd_loss=0.001222 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8924
+[Train] step=0280 total_loss=10.7205 rec_loss=12.4183 cd_loss=0.001255 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8938
+[Train] step=0290 total_loss=11.1380 rec_loss=12.9019 cd_loss=0.001348 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8937
+[Train] step=0300 total_loss=10.7658 rec_loss=12.4708 cd_loss=0.001370 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8943
+[Train] step=0310 total_loss=10.6338 rec_loss=12.3178 cd_loss=0.001238 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8951
+[Train] step=0320 total_loss=11.0936 rec_loss=12.8505 cd_loss=0.001083 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8947
+[Train] step=0330 total_loss=11.1415 rec_loss=12.9059 cd_loss=0.001414 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8984
+[Train] step=0340 total_loss=10.9741 rec_loss=12.7121 cd_loss=0.001217 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.8976
+[Train] step=0350 total_loss=11.1378 rec_loss=12.9016 cd_loss=0.001252 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9001
+[Train] step=0360 total_loss=11.2967 rec_loss=13.0857 cd_loss=0.001281 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9045
+[Train] step=0370 total_loss=10.7623 rec_loss=12.4667 cd_loss=0.001125 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9057
+[Train] step=0380 total_loss=10.8650 rec_loss=12.5857 cd_loss=0.001155 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9039
+[Train] step=0390 total_loss=10.9513 rec_loss=12.6856 cd_loss=0.001447 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9024
+[Train] step=0400 total_loss=11.1408 rec_loss=12.9052 cd_loss=0.001336 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9019
+[Train] step=0410 total_loss=10.7779 rec_loss=12.4847 cd_loss=0.001466 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9009
+[Train] step=0420 total_loss=10.6622 rec_loss=12.3508 cd_loss=0.001088 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9036
+[Train] step=0430 total_loss=10.9327 rec_loss=12.6641 cd_loss=0.001156 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9048
+[Train] step=0440 total_loss=10.9737 rec_loss=12.7115 cd_loss=0.001256 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9059
+[Train] step=0450 total_loss=11.2517 rec_loss=13.0336 cd_loss=0.001176 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9066
+[Train] step=0460 total_loss=10.9008 rec_loss=12.6271 cd_loss=0.001152 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9074
+[Train] step=0470 total_loss=11.1341 rec_loss=12.8974 cd_loss=0.001090 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9105
+[Train] step=0480 total_loss=11.0476 rec_loss=12.7971 cd_loss=0.001126 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9102
+[Train] step=0490 total_loss=10.9722 rec_loss=12.7098 cd_loss=0.001331 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9105
+[Train] step=0500 total_loss=10.7734 rec_loss=12.4796 cd_loss=0.001178 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9098
+[Train] step=0510 total_loss=11.2802 rec_loss=13.0666 cd_loss=0.001253 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9110
+[Train] step=0520 total_loss=11.0015 rec_loss=12.7437 cd_loss=0.001319 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9112
+[Train] step=0530 total_loss=10.8994 rec_loss=12.6255 cd_loss=0.001262 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9117
+[Train] step=0540 total_loss=11.0746 rec_loss=12.8284 cd_loss=0.001172 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9118
+[Train] step=0550 total_loss=10.8350 rec_loss=12.5509 cd_loss=0.001301 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9132
+[Train] step=0560 total_loss=11.1512 rec_loss=12.9171 cd_loss=0.001161 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9132
+[Train] step=0570 total_loss=10.6738 rec_loss=12.3642 cd_loss=0.001157 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9127
+[Train] step=0580 total_loss=11.0431 rec_loss=12.7919 cd_loss=0.001195 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9152
+[Train] step=0590 total_loss=11.1930 rec_loss=12.9656 cd_loss=0.001152 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9146
+[Train] step=0600 total_loss=10.9214 rec_loss=12.6510 cd_loss=0.001065 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9151
+[Train] step=0610 total_loss=11.3391 rec_loss=13.1349 cd_loss=0.001113 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9161
+[Train] step=0620 total_loss=11.1014 rec_loss=12.8595 cd_loss=0.001317 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9172
+[Train] step=0630 total_loss=11.2142 rec_loss=12.9901 cd_loss=0.001105 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9189
+[Train] step=0640 total_loss=11.0571 rec_loss=12.8081 cd_loss=0.001190 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9194
+[Train] step=0650 total_loss=11.3723 rec_loss=13.1734 cd_loss=0.001158 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9220
+[Train] step=0660 total_loss=11.1720 rec_loss=12.9412 cd_loss=0.001242 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9221
+[Train] step=0670 total_loss=10.8952 rec_loss=12.6207 cd_loss=0.001240 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9205
+[Train] step=0680 total_loss=11.2038 rec_loss=12.9782 cd_loss=0.001014 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9198
+[Train] step=0690 total_loss=10.9873 rec_loss=12.7273 cd_loss=0.001171 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9212
+[Train] step=0700 total_loss=10.9415 rec_loss=12.6742 cd_loss=0.001276 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9222
+[Train] step=0710 total_loss=10.7524 rec_loss=12.4552 cd_loss=0.001333 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9201
+[Train] step=0720 total_loss=11.1020 rec_loss=12.8602 cd_loss=0.001234 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9203
+[Train] step=0730 total_loss=11.1391 rec_loss=12.9032 cd_loss=0.001195 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9210
+[Train] step=0740 total_loss=11.2205 rec_loss=12.9975 cd_loss=0.001159 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9207
+[Train] step=0750 total_loss=10.8247 rec_loss=12.5389 cd_loss=0.001157 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9199
+[Train] step=0760 total_loss=11.1800 rec_loss=12.9506 cd_loss=0.001057 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9205
+[Train] step=0770 total_loss=11.0569 rec_loss=12.8080 cd_loss=0.001305 alpha_rec=0.8633 alpha_cd=0.1367 active=2 beta_entropy=0.0000 avg_total=10.9213
+[Epoch 3] train_total=10.9214 train_rec=12.6510 train_cd=0.001274 alpha_rec=0.8633 alpha_cd=0.1367 active=2.00 beta_entropy=0.0000 | eval_rec=13.2489 eval_cd=0.001380
+Saved new best checkpoint to: artifacts\checkpoints\autocdsr_full_best.pt
+
+Training finished.
+Best eval rec loss: 13.248938510894776
+(pytorch) PS D:\HKUST\MSBD5002\project\autocdsr_self> & C:\Users\15940\anaconda3\envs\pytorch\python.exe d:/HKUST/MSBD5002/project/autocdsr_self/test_autocdsr.py
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776255514.685457    5776 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776255517.357038    5776 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Using device: cuda
+Loaded mapper:
+num_items : 944387
+num_events: 9
+item_pad  : 0
+item_mask : 1
+item_unk  : 2
+I0000 00:00:1776255521.219041    5776 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1776255521.332152   12864 tf_record_dataset_op.cc:390] TFRecordDataset `buffer_size` is unspecified, default to 262144
+Dataset sizes:
+test: 1000
+Loaded checkpoint from: artifacts/checkpoints/autocdsr_full_best.pt
+Checkpoint epoch: 3
+
+Sample 0
+label: 29732
+rank : 57731
+top10: [24657, 24718, 71891, 13717, 822, 1209, 103470, 28039, 47777, 196]
+
+Sample 1
+label: 944377
+rank : 601667
+top10: [188039, 143074, 395871, 229967, 371435, 336516, 109011, 136483, 134898, 450603]
+
+Sample 2
+label: 866229
+rank : 761460
+top10: [28850, 40051, 4162, 66456, 15236, 161461, 34803, 8513, 1029, 29309]
+
+Sample 3
+label: 162075
+rank : 2045
+top10: [71891, 67721, 103470, 1209, 24657, 13717, 24718, 65132, 14254, 40374]
+
+Sample 4
+label: 315799
+rank : 12074
+top10: [12634, 402, 141460, 44546, 106035, 32394, 123549, 5225, 19682, 42930]
+
+===== Test Metrics =====
+num_test_samples: 1000
+mean_rank: 272141.781250
+median_rank: 141974.000000
+Recall@5: 0.000000
+Hits@5: 0.000000
+NDCG@5: 0.000000
+Recall@10: 0.000000
+Hits@10: 0.000000
+NDCG@10: 0.000000
+Recall@20: 0.001000
+Hits@20: 0.001000
+NDCG@20: 0.000240
+
+(pytorch) PS D:\HKUST\MSBD5002\project\autocdsr_self> & C:\Users\15940\anaconda3\envs\pytorch\python.exe d:/HKUST/MSBD5002/project/autocdsr_self/test_autocdsr.py
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776256771.628898   18300 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776256773.363628   18300 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Using device: cuda
+Loaded mapper:
+num_items : 944387
+num_events: 9
+item_pad  : 0
+item_mask : 1
+item_unk  : 2
+I0000 00:00:1776256775.825765   18300 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1776256775.865986   36500 tf_record_dataset_op.cc:390] TFRecordDataset `buffer_size` is unspecified, default to 262144
+Dataset sizes:
+test: 1000
+Loaded checkpoint from: artifacts/checkpoints/autocdsr_full_best.pt
+Checkpoint epoch: 3
+
+Sample 0
+label: 29732
+rank : 57514
+top10: [24657, 24718, 71891, 13717, 822, 1209, 103470, 28039, 47777, 196]
+
+Sample 1
+label: 944377
+rank : 601163
+top10: [188039, 143074, 395871, 229967, 371435, 336516, 109011, 136483, 134898, 450603]
+
+Sample 2
+label: 866229
+rank : 761092
+top10: [28850, 40051, 4162, 66456, 15236, 161461, 34803, 8513, 1029, 29309]
+
+Sample 3
+label: 162075
+rank : 1963
+top10: [71891, 67721, 103470, 1209, 24657, 24718, 65132, 40374, 822, 6599]
+
+Sample 4
+label: 315799
+rank : 12049
+top10: [12634, 402, 141460, 44546, 106035, 32394, 123549, 5225, 19682, 42930]
+
+===== Test Metrics =====
+num_test_samples: 1000
+mean_rank: 271883.968750
+median_rank: 141764.000000
+Recall@5: 0.000000
+Hits@5: 0.000000
+NDCG@5: 0.000000
+Recall@10: 0.000000
+Hits@10: 0.000000
+NDCG@10: 0.000000
+Recall@20: 0.001000
+Hits@20: 0.001000
+NDCG@20: 0.000245
+
+(pytorch) PS D:\HKUST\MSBD5002\project\autocdsr_self> & C:\Users\15940\anaconda3\envs\pytorch\python.exe d:/HKUST/MSBD5002/project/autocdsr_self/test_autocdsr_sampled.py
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776258649.623528   24864 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776258651.398541   24864 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Using device: cuda
+Loaded mapper:
+num_items : 944387
+num_events: 9
+item_pad  : 0
+item_mask : 1
+item_unk  : 2
+num_negative_samples: 1000
+exclude_seen_items : True
+I0000 00:00:1776258653.857627   24864 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1776258653.892085   36108 tf_record_dataset_op.cc:390] TFRecordDataset `buffer_size` is unspecified, default to 262144
+Dataset sizes:
+test: 1000
+Loaded checkpoint from: artifacts/checkpoints/autocdsr_full_best.pt
+Checkpoint epoch: 3
+
+Sample 0
+label: 665352
+sampled rank: 359
+global top10: [1209, 4935, 822, 824, 22668, 13390, 46215, 16621, 3172, 196]
+
+Sample 1
+label: 267976
+sampled rank: 60
+global top10: [93422, 249851, 28850, 39734, 66456, 161461, 8513, 86839, 229967, 176541]
+
+Sample 2
+label: 56535
+sampled rank: 1
+global top10: [22757, 822, 4740, 1209, 824, 3788, 24657, 196, 19228, 28039]
+
+Sample 3
+label: 58512
+sampled rank: 1
+global top10: [12634, 124799, 123549, 483, 32394, 11280, 24407, 402, 75564, 11378]
+
+Sample 4
+label: 189030
+sampled rank: 55
+global top10: [28850, 161461, 40051, 4162, 251014, 66456, 6998, 38790, 29309, 15236]
+
+===== Sampled Test Metrics =====
+num_test_samples: 1000
+mean_rank: 289.562988
+median_rank: 151.000000
+Recall@5: 0.110000
+Hits@5: 0.110000
+NDCG@5: 0.067935
+Recall@10: 0.160000
+Hits@10: 0.160000
+NDCG@10: 0.084188
+Recall@20: 0.231000
+Hits@20: 0.231000
+NDCG@20: 0.102062
+
+(pytorch) PS D:\HKUST\MSBD5002\project\autocdsr_self> & C:\Users\15940\anaconda3\envs\pytorch\python.exe d:/HKUST/MSBD5002/project/autocdsr_self/test_autocdsr_sampled.py
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776258785.792887   34748 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1776258787.562025   34748 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Using device: cuda
+Loaded mapper:
+num_items : 944387
+num_events: 9
+item_pad  : 0
+item_mask : 1
+item_unk  : 2
+num_negative_samples: 5000
+exclude_seen_items : True
+I0000 00:00:1776258789.994302   34748 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1776258790.031804   16708 tf_record_dataset_op.cc:390] TFRecordDataset `buffer_size` is unspecified, default to 262144
+Dataset sizes:
+test: 1000
+Loaded checkpoint from: artifacts/checkpoints/autocdsr_full_best.pt
+Checkpoint epoch: 3
+
+Sample 0
+label: 665352
+sampled rank: 1787
+global top10: [1209, 4935, 822, 824, 22668, 13390, 46215, 16621, 3172, 196]
+
+Sample 1
+label: 267976
+sampled rank: 279
+global top10: [93422, 249851, 28850, 39734, 66456, 161461, 8513, 86839, 229967, 176541]
+
+Sample 2
+label: 56535
+sampled rank: 2
+global top10: [22757, 822, 4740, 1209, 824, 3788, 24657, 196, 19228, 28039]
+
+Sample 3
+label: 58512
+sampled rank: 1
+global top10: [12634, 124799, 123549, 483, 32394, 11280, 24407, 402, 75564, 11378]
+
+Sample 4
+label: 189030
+sampled rank: 317
+global top10: [28850, 161461, 40051, 4162, 251014, 66456, 6998, 38790, 29309, 15236]
+
+===== Sampled Test Metrics =====
+num_test_samples: 1000
+mean_rank: 1441.400024
+median_rank: 750.000000
+Recall@5: 0.040000
+Hits@5: 0.040000
+NDCG@5: 0.021547
+Recall@10: 0.060000
+Hits@10: 0.060000
+NDCG@10: 0.028050
+Recall@20: 0.097000
+Hits@20: 0.097000
+NDCG@20: 0.037423
